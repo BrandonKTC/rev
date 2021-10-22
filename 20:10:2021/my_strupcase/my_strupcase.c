@@ -5,14 +5,14 @@
 **      string
 */
 
-char *my_strupcase(char *str)
+char *my_strlowcase(char *str)
 {
-    int t = 0;
-    while(str[t])
+    int i = 0;
+    while(str[i])
     {
-        if(str[t] > 96)
-        str[t] = str[t] - 32; 
-        t++;
+        if(str[i] >= 'a' && str[i] <= 'z')
+            str[i] -= 32;
+        i++;
     }
     return str;
 }

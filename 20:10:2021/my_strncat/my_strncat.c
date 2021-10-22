@@ -19,7 +19,7 @@ char *my_strncat(char *dest, const char *src, int nb)
 {
     int i = my_strlen(dest);
     int j = 0;
-    while(j < nb)
+    while(src[j] != '\0' &&  j < nb)
     {
         dest[i+j]=src[j];
         j++;
