@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html>
+	<head>
+		<link href="./style.css" rel="stylesheet">
+		<title>
+			My Portfolio
+		</title>
+	</head>
+	<body>
+		<h2 class="title">Contact page !</h2>
+		<div class="header">
+			<h1>Brandon</h1>
+			<nav>
+				<ul>
+					<li>
+						<a href="./index.html">Projects</a>
+					</li>
+					<li>
+						<a href="./about.html">About</a>
+					</li>
+					<li>
+						<a href="./contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<main>
+			<form>
+				<fieldset>
+					<legend>Personal informations</legend>
+					<div>
+						  <input type="radio" id="Male" name="civility" value="Male" checked>
+						  <label for="Male">M</label>
+					</div>
+					<div>
+						<input type="radio" id="Female" name="civility" value="Female">
+						<label for="Female">F</label>
+					</div>
+					<div>
+						<label for="firstname">Firstname: </label>
+						<input type="text" name="firstname">
+					</div>
+					<div>
+						<label for="lastname">Lastname: </label>
+						<input type="text" name="lastname">
+					</div>
+					<div>
+						<label for="email">Email: </label>
+						<input type="email" name="email">
+					</div>
+					<div>
+						<label for="phone">Phone: </label>
+						<input type="number" name="phone">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Message</legend>
+					<select name="action">
+						<option value="work">Work Proposal</option>
+						<option value="hello">Just saying hello</option>
+						<option value="rdv">Rendez-vous</option>
+					</select>
+					<div>
+						<label for="date">Current Date: </label>
+						<input type="date" name="date">
+					</div>
+					<div>
+						<label for="comments">Comments</label>
+						<textarea name="comments" id="" cols="30" rows="10"></textarea>
+					</div>
+				</fieldset>
+				<input type="submit" value="send">
+			</form>
+		</main>
+	</body>
+</html>
